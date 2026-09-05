@@ -38,9 +38,10 @@ The dot has no click action. It is informational only, so it cannot be dismissed
 
 ```sh
 omarchy plugin add https://github.com/Nirmal314/omarchy-screen-sharing-indicator --enable
+omarchy bar move archer-nemo.screen-sharing --section center --index 0
 ```
 
-After installing, start a screen share to confirm the red dot appears in the center of the bar. If it does not show, see Troubleshooting.
+After installing, start a screen share to confirm the red dot appears. If it does not show, see Troubleshooting.
 
 ## Modify
 
