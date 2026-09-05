@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "archer-nemo.screen-sharing",
+  "name": "Screen Sharing Indicator",
+  "version": "1.0.0",
+  "author": "archer-nemo",
+  "license": "MIT",
+  "description": "Pulsing red dot in the bar when the screen is being shared via PipeWire (Zoom, Teams, Discord, browser tabs, etc.).",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Screen Sharing Indicator",
+    "description": "Pulsing red dot when screen is shared",
+    "category": "Info",
+    "allowMultiple": false,
+    "defaultSection": "center",
+    "defaults": {
+      "pollSeconds": 3
+    },
+    "schema": [
+      {
+        "key": "pollSeconds",
+        "type": "integer",
+        "label": "Poll interval (seconds)",
+        "min": 1,
+        "max": 30,
+        "step": 1,
+        "defaultValue": 3
+      }
+    ]
+  }
+}
