@@ -116,3 +116,7 @@ Omarchy plugins run unsandboxed with your user permissions, so review the code b
 - Reads no personal files. It inspects only your current PipeWire user session and the processes you can already see.
 - Runs its bundled `screen-sharing.sh`, which invokes `pw-dump`, `jq`, and `pgrep`. `pgrep` is limited to your own processes, so it does not reveal other users' activity.
 - Changes nothing on the system. It only observes the PipeWire graph and the process table, and stores no state on disk apart from the `pollSeconds` setting that Omarchy keeps.
+
+## License
+
+MIT, copyright (c) 2026 Nirmal314. See the [LICENSE](LICENSE) file.
