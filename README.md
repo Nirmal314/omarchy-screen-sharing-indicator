@@ -43,6 +43,14 @@ omarchy bar move archer-nemo.screen-sharing --section center --index 0
 
 After installing, start a screen share to confirm the red dot appears. If it does not show, see Troubleshooting.
 
+## Update
+
+```sh
+omarchy plugin remove archer-nemo.screen-sharing
+omarchy plugin add https://github.com/Nirmal314/omarchy-screen-sharing-indicator --enable
+omarchy bar move archer-nemo.screen-sharing --section center --index 0
+```
+
 ## Modify
 
 The poll interval, 1 to 30 seconds, is a plugin setting exposed in the Omarchy widget settings (stored under the plugin's settings block in `~/.config/omarchy/shell.json` under the key `pollSeconds`). The default of 3 balances a quick reaction with negligible overhead.
