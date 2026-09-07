@@ -64,7 +64,7 @@ BarWidget {
     height: 9
     radius: 4.5
     anchors.centerIn: parent
-    color: Color.urgent
+    color: "#ff2222"
     opacity: 1.0
 
     SequentialAnimation on opacity {
