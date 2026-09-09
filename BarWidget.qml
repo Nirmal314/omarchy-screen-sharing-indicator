@@ -22,6 +22,7 @@ BarWidget {
   visible: sharing
   implicitWidth: 16
   implicitHeight: barSize
+  readonly property bool tooltipHovered: visible && hoverArea.containsMouse
   Timer {
     id: pollTimer
     interval: Math.max(1000, (root.setting("pollSeconds", 3) || 3) * 1000)
@@ -81,6 +82,7 @@ BarWidget {
     z: 1
   }
   MouseArea {
+    id: hoverArea
     anchors.fill: parent
     hoverEnabled: true
     cursorShape: Qt.ArrowCursor
