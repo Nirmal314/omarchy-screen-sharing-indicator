@@ -4,6 +4,10 @@ A small Omarchy bar widget that shows a pulsing red dot in the bar while anythin
 
 The widget takes up no space when idle. The dot only appears when it detects an active share, so the bar stays clean the rest of the time.
 
+# Preview
+
+![preview](preview.png)
+
 ## Requirements
 
 - Omarchy with the Quattro shell
